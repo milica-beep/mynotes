@@ -1,0 +1,34 @@
+<div class="container">
+    <h1>“A good story is a dream shared by the author and the reader. Anything that wakes the reader from the dream is a mortal sin.”</h1>
+    <h3>-Victor J. Banis</h3>
+    <form [formGroup]="storyForm" (ngSubmit)="onSubmit()" >
+        <mat-form-field appearance="fill">
+            <mat-label for="title">Title</mat-label>
+            <input matInput formControlName="title" class="form-control">
+        </mat-form-field>
+
+        <br>
+
+        <mat-form-field appearance="fill" class="text">
+            <mat-label for="text">Story</mat-label>
+            <textarea matInput rows="15" formControlName="text" class="form-control"></textarea>
+        </mat-form-field>
+
+        <br>
+
+        <mat-form-field appearance="fill">
+            <mat-label for="category">Category</mat-label>
+            <mat-select formControlName="category">
+                <mat-option *ngFor="let cat of categories" [value]="cat.id">
+                  {{cat.name}}
+                </mat-option>
+              </mat-select>
+        </mat-form-field>
+    
+        <br>
+    
+        <button mat-raised-button color="primary">
+            Post story
+        </button>
+    </form>
+</div>

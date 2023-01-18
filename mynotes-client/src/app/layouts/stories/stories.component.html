@@ -1,0 +1,6 @@
+<div>
+    <span *ngFor="let s of stories">
+        <app-single-story-view [story]="s" [currentUserId]="currentUserId" (storyDeleted)="onStoryDeleted($event)"></app-single-story-view>
+        <br>
+    </span>
+</div>

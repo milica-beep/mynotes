@@ -1,0 +1,22 @@
+.container {
+    padding-left: 20%;
+    padding-top: 2%;
+}
+
+mat-form-field {
+    width: 70%;
+}
+
+button {
+    margin-left: 30%;
+}
+
+h1 {
+    padding-right: 30%;
+    font-style: italic;
+}
+
+h3 {
+    font-style: italic;
+    margin-left: 60%;
+}

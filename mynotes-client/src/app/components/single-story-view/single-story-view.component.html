@@ -1,0 +1,17 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>{{ story.title }}</mat-card-title> 
+        <span *ngIf="story.writer['id'] == currentUserId">
+            <button mat-icon-button matTooltip="Edit story" 
+                    matTooltipPosition="above"
+                    [routerLink]="['/edit-story', story.id]">
+                <mat-icon>edit</mat-icon>
+            </button>
+            <button mat-icon-button matTooltip="Delete story" matTooltipPosition="above" (click)="onDelete()">
+                <mat-icon>delete</mat-icon>
+            </button>
+        </span>
+        <mat-card-subtitle>Wrote by {{ story.writer.name }} {{ story.writer.lastname }} on {{ story.timestamp }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>{{ story.text }}</mat-card-content>
+</mat-card>

@@ -1,0 +1,6 @@
+<mat-chip-listbox>
+    <mat-chip-option color="accent" [routerLink]="['/write-new-story']">+Add new story</mat-chip-option>
+    <mat-chip-option *ngFor="let c of categories" (click)="filterByCategory(c.id)">{{ c.name }}</mat-chip-option>
+</mat-chip-listbox>
+<app-stories [stories]="stories" [currentUserId]="currentUserId" (storyDeleted)="onStoryDeleted($event)"></app-stories>
+<button mat-button (click)="onClick()">Load more</button>

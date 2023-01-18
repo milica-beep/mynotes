@@ -1,0 +1,32 @@
+<div class="container">
+    <form [formGroup]="storyForm" (ngSubmit)="onSubmit()" >
+        <mat-form-field appearance="fill">
+            <mat-label for="title">Title</mat-label>
+            <input matInput formControlName="title" class="form-control">
+        </mat-form-field>
+
+        <br>
+
+        <mat-form-field appearance="fill" class="text">
+            <mat-label for="text">Story</mat-label>
+            <textarea matInput rows="15" formControlName="text" class="form-control"></textarea>
+        </mat-form-field>
+
+        <br>
+
+        <mat-form-field appearance="fill">
+            <mat-label for="category">Category</mat-label>
+            <mat-select formControlName="category">
+                <mat-option *ngFor="let cat of categories" [value]="cat.id">
+                  {{cat.name}}
+                </mat-option>
+              </mat-select>
+        </mat-form-field>
+    
+        <br>
+    
+        <button mat-raised-button color="primary">
+            Save
+        </button>
+    </form>
+</div>
