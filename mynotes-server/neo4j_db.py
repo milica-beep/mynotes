@@ -19,11 +19,9 @@ def get_db() -> Session:
         g.neo4j_db = driver.session()
     return g.neo4j_db
 
-
 def close_db(error):
     if hasattr(g, "neo4j_db"):
         g.neo4j_db.close()
-
 
 # users
 
@@ -228,11 +226,3 @@ def serialize_category(category):
 
 def serialize_user(user):
     return {"id": user["id"], "name": user["name"], "lastname": user["lastname"], "email": user["email"]}
-
-# def serialize_comment(comment):
-#     return {
-#         'id': comment['id'],
-#         'text': comment['text'],
-#         'userId': comment['user_id'],
-#         'userFullname': comment['user_fullname']
-#     }

@@ -3,4 +3,4 @@
     <mat-chip-option *ngFor="let c of categories" (click)="filterByCategory(c.id)">{{ c.name }}</mat-chip-option>
 </mat-chip-listbox>
 <app-stories [stories]="stories" [currentUserId]="currentUserId" (storyDeleted)="onStoryDeleted($event)"></app-stories>
-<button mat-button (click)="onClick()">Load more</button>
+<button *ngIf="stories.length > 4" mat-button (click)="onClick()">Load more</button>
