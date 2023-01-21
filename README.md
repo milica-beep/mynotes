@@ -3,6 +3,7 @@ Aplikacija namenjena pisanju i čitanju kratkih priča
 
 # Backend
 Ukoliko je potrebno, promeniti credentials za pristup bazi u fajlu neo4j_db.py
+
 Pokretanje:
 1. Instalacija potrebnih modula korišćenjem pip packet manager-a
 	```bash
