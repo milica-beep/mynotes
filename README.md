@@ -1,5 +1,5 @@
 # Mynotes
-Aplikacija namenjena pisanju i čitanju kratkih priča. Razvijena korišćenjem *Flask* i *Angular* okruženja.
+Aplikacija namenjena pisanju i čitanju kratkih priča. Razvijena korišćenjem *Flask* i *Angular* okruženja, i neo4j baze podataka.
 
 # Backend
 *Credentials za pristup bazi se nalaze u fajlu neo4j_db.py*
