@@ -23,9 +23,9 @@ Pokretanje:
 1. Instalacija Node.js-a i npm-a (https://nodejs.org/en/download/)
 2. Instalacija Angular framework-a korišćenjem npm packet manager-a
 	```bash
-	-npm install -g @angular/cli
+	npm install -g @angular/cli
 	```
 3. Pokretanje aplikacije
 	```bash
-	-ng serve --open
+	ng serve --open
 	```
