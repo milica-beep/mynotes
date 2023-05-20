@@ -1,4 +1,4 @@
-# Mynotes
+# mynotes
 Application meant for writing and reading short stories. Developed using *Flask*, *Angular* and *neo4j*.
 
 # Backend
