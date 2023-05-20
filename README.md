@@ -1,31 +1,28 @@
 # Mynotes
-Aplikacija namenjena pisanju i čitanju kratkih priča. Razvijena korišćenjem *Flask* i *Angular* okruženja i neo4j baze podataka.
+Application meant for writing and reading short stories. Developed using *Flask*, *Angular* and *neo4j*.
 
 # Backend
-*Credentials za pristup bazi se nalaze u fajlu neo4j_db.py*
-
-Pokretanje:
-1. Instalacija potrebnih modula korišćenjem pip packet manager-a
+1. Install python modules using pip:
 	```bash
 	pip install -r requirements.txt
 	```
 
-2. Kreiranje i dodavanje podataka u bazu:
+2. Populate database:
 	```bash
 	python populate_db.py
 	```
-3. Pokretanje aplikacije: 
+3. Run app: 
 	```bash
 	python app.py
 	```
   
  ## Frontend
-1. Instalacija Node.js-a i npm-a (https://nodejs.org/en/download/)
-2. Instalacija Angular framework-a korišćenjem npm packet manager-a
+1. Install Node.js and npm (https://nodejs.org/en/download/)
+2. Install Angular using npm:
 	```bash
 	npm install -g @angular/cli
 	```
-3. Pokretanje aplikacije
+3. Run app:
 	```bash
 	ng serve --open
 	```
